@@ -52,3 +52,25 @@ python scheduler.py
 ## Security
 
 Environment variables are stored using `.env`.
+
+
+## Screenshots
+
+### Bulk Email Sender
+
+![Bulk Sender](assets/bulk_sender.png)
+
+---
+
+### Scheduler Email Preview
+
+![Email Scheduler](assets/scheduler.png)
+
+---
+
+### Logging System
+
+![Logs](assets/logs.png)
+
+---
+
