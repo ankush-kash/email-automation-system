@@ -21,7 +21,8 @@ def send_email(receiver,subject,body,html_content=None,attachment_path = None):
 
     msg.set_content(body)
 
-    msg.add_alternative(html_content, subtype="html")
+    if html_content is not None:
+        msg.add_alternative(html_content, subtype="html")
 
     if attachment_path:
 
