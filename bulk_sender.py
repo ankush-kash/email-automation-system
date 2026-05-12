@@ -21,8 +21,9 @@ for index,row in data.iterrows():
     send_email(
         receiver=email,
         subject='Welcome!',
+        body=f"Hello {name}",
         html_content=personalized_html,
-        attachment_path= 'attachments/save.pdf'
+        
     )
 
     time.sleep(5)

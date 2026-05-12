@@ -11,7 +11,7 @@ load_dotenv()
 EMAIL_USER = os.getenv('EMAIL_USER')
 EMAIL_PASS = os.getenv('EMAIL_PASS')
 
-def send_email(receiver,subject,html_content,attachment_path = False):
+def send_email(receiver,subject,body,html_content=None,attachment_path = None):
 
     msg = EmailMessage()
 
@@ -19,7 +19,7 @@ def send_email(receiver,subject,html_content,attachment_path = False):
     msg['To'] = receiver
     msg['Subject'] = subject
 
-    msg.set_content("Your email client does not support HTML.")
+    msg.set_content(body)
 
     msg.add_alternative(html_content, subtype="html")
 
